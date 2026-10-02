@@ -1,4 +1,4 @@
-import type { Bindings } from '../types'
+import type { R2Bucket } from '../types'
 
 const IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/gif']
 const VIDEO_TYPES = ['video/mp4', 'video/webm', 'video/quicktime', 'video/x-matroska']

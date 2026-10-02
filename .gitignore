@@ -15,6 +15,9 @@ dist/
 node_modules/
 .wrangler
 
+# render / local runtime data (sqlite db + uploaded media)
+data/
+
 # env
 .env
 .env.production

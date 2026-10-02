@@ -1,6 +1,6 @@
 import type { Context } from 'hono'
 import { getCookie, setCookie, deleteCookie } from 'hono/cookie'
-import type { Bindings, AppUser } from '../types'
+import type { Bindings, AppUser, D1Database } from '../types'
 
 const SESSION_COOKIE = 'mtp_session'
 const SESSION_DAYS = 30

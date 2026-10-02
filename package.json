@@ -1,22 +1,17 @@
 {
   "name": "mt-prompts",
   "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "wrangler pages dev",
-    "deploy": "npm run build && wrangler pages deploy",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
-    "db:migrate:local": "wrangler d1 migrations apply mt-prompts-db --local",
-    "db:migrate:remote": "wrangler d1 migrations apply mt-prompts-db --remote"
+    "start": "tsx server/index.js",
+    "dev": "tsx watch server/index.js"
   },
   "dependencies": {
-    "hono": "^4.13.8"
-  },
-  "devDependencies": {
-    "@hono/vite-build": "^1.11.1",
-    "@hono/vite-dev-server": "^0.26.1",
-    "vite": "^8.1.4",
-    "wrangler": "^4.110.0"
+    "@hono/node-server": "^2.1.3",
+    "better-sqlite3": "^13.0.3",
+    "hono": "^4.13.8",
+    "tsx": "^4.23.15"
   }
 }
